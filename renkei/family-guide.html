@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>親子で見るガイド | ボラカイ島 出発前ガイド</title>
+  <meta name="description" content="飛行機・船・e-trike・ビーチ・食べもの・生き物。出発前に親子で眺めながら話せるボラカイ島ガイドです。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260616">
+</head>
+<body class="has-bottom-nav">
+
+<!-- アプリヘッダー -->
+<header class="app-header" id="appHeader">
+  <a href="index.html" class="app-header-logo">
+    <img src="assets/img/logo-boracay.png" alt="親子で旅するボラカイ島 BORACAY" class="header-logo-img">
+  </a>
+  <button class="app-header-menu" id="navToggle" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="site-nav" id="siteNav">
+  <ul>
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="family-guide.html#discover">見つける</a></li>
+    <li><a href="parent-guide.html">安心準備</a></li>
+    <li><a href="checklist.html">チェック</a></li>
+  </ul>
+</nav>
+
+<!-- ===== ヒーロー ===== -->
+<section id="discover" class="family-hero">
+  <img src="assets/img/bangka-boat.jpeg" class="family-hero-img" alt="バンカーボートと青い海" loading="eager" onerror="this.src='assets/img/white-beach.jpg'">
+  <div class="family-hero-overlay">
+    <div class="container">
+      <span class="fg-hero-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        見つけてみよう
+      </span>
+      <h1>ボラカイ島で、<br>なに見つける？</h1>
+      <p class="family-hero-sub">気になるものから、タップしてみよう。<br>親子で一緒にのぞいてみて。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== カテゴリカード ===== -->
+<section class="fg-category" aria-label="カテゴリ">
+  <div class="fg-cat-grid">
+
+    <a href="#sec-transport" class="fg-cat-card">
+      <div class="fg-cat-info">
+        <div class="fg-cat-icon-wrap fg-cat-icon--transport">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 18h18M6 18l-1-7h14l-1 7"/>
+            <path d="M12 4v7M12 4l5.5 7"/>
+          </svg>
+        </div>
+        <span class="fg-cat-name">のりもの</span>
+        <span class="fg-cat-arrow">›</span>
+      </div>
+      <div class="fg-cat-photo fg-cat-photo--transport">
+        <img src="assets/img/bangka-boat.jpeg" alt="バンカーボートと e-trike" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <p class="fg-cat-desc">海や空をうごく乗りものを見てみよう。</p>
+    </a>
+
+    <a href="#sec-food" class="fg-cat-card">
+      <div class="fg-cat-info">
+        <div class="fg-cat-icon-wrap fg-cat-icon--food">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2M7 2v20"/>
+            <path d="M21 15V2a5 5 0 00-5 5v6c0 1.1.9 2 2 2h3v5"/>
+          </svg>
+        </div>
+        <span class="fg-cat-name">たべもの</span>
+        <span class="fg-cat-arrow">›</span>
+      </div>
+      <div class="fg-cat-photo fg-cat-photo--food">
+        <img src="assets/img/food.jpg" alt="南国の食べもの" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <p class="fg-cat-desc">ボラカイのあじや、人気のごはんをのぞいてみよう。</p>
+    </a>
+
+    <a href="#sec-beach" class="fg-cat-card">
+      <div class="fg-cat-info">
+        <div class="fg-cat-icon-wrap fg-cat-icon--beach">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M2 12c1.5-2 3-2 4.5 0s3 2 4.5 0 3-2 4.5 0 3 2 4.5 0"/>
+            <path d="M2 17c1.5-2 3-2 4.5 0s3 2 4.5 0 3-2 4.5 0 3 2 4.5 0"/>
+          </svg>
+        </div>
+        <span class="fg-cat-name">海と砂浜</span>
+        <span class="fg-cat-arrow">›</span>
+      </div>
+      <div class="fg-cat-photo fg-cat-photo--beach">
+        <img src="assets/img/white-beach.jpg" alt="白い砂と青い海" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <p class="fg-cat-desc">きれいな海や砂浜のあそびを見てみよう。</p>
+    </a>
+
+    <a href="#sec-dmall" class="fg-cat-card">
+      <div class="fg-cat-info">
+        <div class="fg-cat-icon-wrap fg-cat-icon--town">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+            <path d="M9 22V12h6v10"/>
+          </svg>
+        </div>
+        <span class="fg-cat-name">まちとお店</span>
+        <span class="fg-cat-arrow">›</span>
+      </div>
+      <div class="fg-cat-photo fg-cat-photo--town">
+        <img src="assets/img/dmall.jpg" alt="D'Mall" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <p class="fg-cat-desc">おみやげやさんや、にぎやかなまちをのぞいてみよう。</p>
+    </a>
+
+    <a href="#sec-hotel" class="fg-cat-card">
+      <div class="fg-cat-info">
+        <div class="fg-cat-icon-wrap fg-cat-icon--hotel">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M2 20v-8a2 2 0 012-2h16a2 2 0 012 2v8"/>
+            <path d="M2 20h20M12 12V4M8 8h8"/>
+          </svg>
+        </div>
+        <span class="fg-cat-name">ホテルのくらし</span>
+        <span class="fg-cat-arrow">›</span>
+      </div>
+      <div class="fg-cat-photo fg-cat-photo--hotel"></div>
+      <p class="fg-cat-desc">ホテルでのすごし方や、うれしいサービスを見てみよう。</p>
+    </a>
+
+    <a href="#sec-trouble" class="fg-cat-card">
+      <div class="fg-cat-info">
+        <div class="fg-cat-icon-wrap fg-cat-icon--trouble">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <circle cx="12" cy="12" r="4"/>
+            <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/>
+            <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/>
+            <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/>
+            <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/>
+          </svg>
+        </div>
+        <span class="fg-cat-name">こまったとき</span>
+        <span class="fg-cat-arrow">›</span>
+      </div>
+      <div class="fg-cat-photo fg-cat-photo--trouble"></div>
+      <p class="fg-cat-desc">からだのことや、もしものときに役立つ情報をまとめたよ。</p>
+    </a>
+
+  </div>
+</section>
+
+<!-- ===== 親子で話してみよう ===== -->
+<section class="chat-section" aria-label="親子で話してみよう">
+  <div class="chat-section-head">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--ocean);flex-shrink:0;"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+    親子で話してみよう
+  </div>
+  <div class="chat-grid">
+    <a href="#sec-food" class="chat-pill">
+      <span class="chat-pill-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2M7 2v20"/><path d="M21 15V2a5 5 0 00-5 5v6c0 1.1.9 2 2 2h3v5"/></svg>
+      </span>
+      食べてみたい<br>ものは？
+    </a>
+    <a href="#sec-transport" class="chat-pill">
+      <span class="chat-pill-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18h18M6 18l-1-7h14l-1 7M12 4v7M12 4l5 7"/></svg>
+      </span>
+      どれが一番<br>気になる？
+    </a>
+    <a href="#sec-beach" class="chat-pill">
+      <span class="chat-pill-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12c1.5-2 3-2 4.5 0s3 2 4.5 0 3-2 4.5 0 3 2 4.5 0"/><path d="M2 17c1.5-2 3-2 4.5 0s3 2 4.5 0 3-2 4.5 0 3 2 4.5 0"/></svg>
+      </span>
+      どんな音が<br>しそう？
+    </a>
+  </div>
+</section>
+
+<!-- ===== どんな島？ ===== -->
+<section id="sec-about" class="theme-section theme-section--white">
+  <div class="container">
+    <div class="theme-heading">
+      <div class="theme-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="8" r="4"/>
+          <path d="M4 20c0-3.3 3.6-6 8-6s8 2.7 8 6"/>
+        </svg>
+      </div>
+      <div>
+        <h2>ボラカイ島って<br>どんなところ？</h2>
+        <div class="theme-rule"></div>
+      </div>
+    </div>
+    <p class="theme-intro">フィリピンにある小さな島。白い砂浜と青い海で有名な、とびきりきれいなリゾートです。</p>
+
+    <div class="theme-card-grid">
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--sea"></div>
+        <div class="theme-card-label">世界一の白い砂浜 <span class="theme-card-arrow">›</span></div>
+        <p class="theme-card-desc">さらさらの白い砂。裸足で歩くと気持ちいい</p>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--sunset"></div>
+        <div class="theme-card-label">きれいな夕日 <span class="theme-card-arrow">›</span></div>
+        <p class="theme-card-desc">オレンジから紫に変わる空の色</p>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--food"></div>
+        <div class="theme-card-label">知ってるお店もある <span class="theme-card-arrow">›</span></div>
+        <p class="theme-card-desc">Jollibee・McDonald's・7-Eleven も現地に</p>
+      </div>
+    </div>
+
+    <div class="talk-bubble">
+      <p>ボラカイ島、地図で見るとどのくらいの大きさかな？</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 島までの小さな冒険 ===== -->
+<section id="sec-travel" class="theme-section theme-section--white">
+  <div class="container">
+    <div class="theme-heading">
+      <div class="theme-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+        </svg>
+      </div>
+      <div>
+        <h2>島までの小さな冒険</h2>
+        <div class="theme-rule"></div>
+      </div>
+    </div>
+    <p class="theme-intro">飛行機、港、船、e-trike。島に着くまでにも、いくつかの「はじめて」に出会えます。</p>
+
+    <div class="adventure-grid">
+
+      <div class="adventure-card">
+        <div class="adventure-card-photo">
+          <img src="assets/img/airplane.jpg" alt="飛行機で空へ" loading="lazy">
+        </div>
+        <div class="adventure-card-body">
+          <span class="adventure-step-badge">1つめ</span>
+          <h3 class="adventure-card-title">空を飛んで、フィリピンへ</h3>
+          <p class="adventure-card-text">日本を出発したら、飛行機でフィリピンへ。空の上から見える景色も楽しみのひとつです。</p>
+          <div class="adventure-talk">
+            <span class="adventure-talk-label">ちょっと話してみよう</span>
+            <p>空からどんな景色が見えるかな？</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="adventure-card">
+        <div class="adventure-card-photo">
+          <img src="assets/img/port-boats.jpeg" alt="カティクラン港の船" loading="lazy">
+        </div>
+        <div class="adventure-card-body">
+          <span class="adventure-step-badge">2つめ</span>
+          <h3 class="adventure-card-title">港へ行くと、船が見えてくる</h3>
+          <p class="adventure-card-text">カティクラン空港に着いたら、港へ向かいます。港には、島へ向かう船がいくつも並んでいます。</p>
+          <div class="adventure-talk">
+            <span class="adventure-talk-label">ちょっと話してみよう</span>
+            <p>港にはどんな船があるかな？</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="adventure-card">
+        <div class="adventure-card-photo">
+          <img src="assets/img/bangka-boat.jpeg" alt="バンカーボートで海を渡る" loading="lazy">
+        </div>
+        <div class="adventure-card-body">
+          <span class="adventure-step-badge">3つめ</span>
+          <h3 class="adventure-card-title">船に乗って、島へ近づく</h3>
+          <p class="adventure-card-text">バンカーボートという細長い船で、約15分。海の上を渡りながら、ボラカイ島が少しずつ近づいてきます。</p>
+          <div class="adventure-talk">
+            <span class="adventure-talk-label">ちょっと話してみよう</span>
+            <p>船から何が見えるかな？</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="adventure-card">
+        <div class="adventure-card-photo">
+          <img src="assets/img/etrike.jpg" alt="島の中を走る e-trike" loading="lazy">
+        </div>
+        <div class="adventure-card-body">
+          <span class="adventure-step-badge">4つめ</span>
+          <h3 class="adventure-card-title">島の道で e-trike に出会う</h3>
+          <p class="adventure-card-text">島の中は e-trike という電動の3輪車で移動します。後ろの席に乗り込んで出発です。</p>
+          <div class="adventure-talk">
+            <span class="adventure-talk-label">ちょっと話してみよう</span>
+            <p>e-trikeってどんな音がしそう？</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== のりもの ===== -->
+<section id="sec-transport" class="theme-section theme-section--cream">
+  <div class="container">
+    <div class="theme-heading">
+      <div class="theme-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 18h18M6 18l-1-7h14l-1 7"/>
+          <path d="M12 4v7M12 4l5.5 7"/>
+        </svg>
+      </div>
+      <div>
+        <h2>のりもの</h2>
+        <div class="theme-rule"></div>
+      </div>
+    </div>
+    <p class="theme-intro">海や空をうごく乗りものを見てみよう。形・音・乗り心地、どれが一番気になる？</p>
+
+    <div class="theme-photo-main">
+      <img src="assets/img/bangka-boat.jpeg" alt="バンカーボートで海を渡る" loading="lazy">
+    </div>
+
+    <div class="theme-card-grid">
+      <div class="theme-card">
+        <div class="theme-card-photo">
+          <img src="assets/img/bangka-boat.jpeg" alt="バンカーボート" loading="lazy">
+        </div>
+        <div class="theme-card-label">バンカーボート <span class="theme-card-arrow">›</span></div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo">
+          <img src="assets/img/etrike.jpg" alt="e-trike" loading="lazy">
+        </div>
+        <div class="theme-card-label">e-trike <span class="theme-card-arrow">›</span></div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--sea"></div>
+        <div class="theme-card-label">帆のついた船 <span class="theme-card-arrow">›</span></div>
+      </div>
+    </div>
+
+    <div class="talk-bubble">
+      <p>飛行機・船・e-trike、どれが一番楽しみ？</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 海と砂浜 ===== -->
+<section id="sec-beach" class="theme-section theme-section--white">
+  <div class="container">
+    <div class="theme-heading">
+      <div class="theme-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M2 12c1.5-2 3-2 4.5 0s3 2 4.5 0 3-2 4.5 0 3 2 4.5 0"/>
+          <path d="M2 17c1.5-2 3-2 4.5 0s3 2 4.5 0 3-2 4.5 0 3 2 4.5 0"/>
+        </svg>
+      </div>
+      <div>
+        <h2>海と砂浜</h2>
+        <div class="theme-rule"></div>
+      </div>
+    </div>
+    <p class="theme-intro">白い砂と青い海を、親子でのぞいてみよう。はだしで歩いたらどんな感じかな？</p>
+
+    <div class="theme-photo-main">
+      <img src="assets/img/white-beach.jpg" alt="ボラカイ島の白い砂浜と青い海" loading="lazy">
+    </div>
+
+    <div class="theme-card-grid">
+      <div class="theme-card">
+        <div class="theme-card-photo">
+          <img src="assets/img/white-beach.jpg" alt="白い砂" loading="lazy" style="object-position: 50% 88%;">
+        </div>
+        <div class="theme-card-label">白い砂 <span class="theme-card-arrow">›</span></div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo">
+          <img src="assets/img/white-beach.jpg" alt="青い海" loading="lazy" style="object-position: 50% 22%;">
+        </div>
+        <div class="theme-card-label">青い海 <span class="theme-card-arrow">›</span></div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo">
+          <img src="assets/img/puka-beach.jpg" alt="波打ちぎわ" loading="lazy">
+        </div>
+        <div class="theme-card-label">波打ちぎわ <span class="theme-card-arrow">›</span></div>
+      </div>
+    </div>
+
+    <div class="theme-card-grid">
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--sea"></div>
+        <div class="theme-card-label">Station 1・静か <span class="theme-card-arrow"></span></div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--sea"></div>
+        <div class="theme-card-label">Station 2・D'Mall近く <span class="theme-card-arrow"></span></div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo">
+          <img src="assets/img/willys-rock.jpg" alt="Willy's Rock" loading="lazy">
+        </div>
+        <div class="theme-card-label">Willy's Rock <span class="theme-card-arrow">›</span></div>
+      </div>
+    </div>
+
+    <div class="talk-bubble">
+      <p>白い砂、はだしで歩いてみたい？</p>
+      <p>海の中、どこまで見えるかな？</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 生きもの ===== -->
+<section id="sec-beachlife" class="theme-section theme-section--cream">
+  <div class="container">
+    <div class="theme-heading">
+      <div class="theme-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+        </svg>
+      </div>
+      <div>
+        <h2>砂浜の小さな生きもの</h2>
+        <div class="theme-rule"></div>
+      </div>
+    </div>
+    <p class="theme-intro">砂浜や波打ちぎわには、小さな生き物が隠れているかもしれません。見つけられたらラッキー。</p>
+
+    <div class="theme-card-grid">
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--sea"></div>
+        <div class="theme-card-label">小さな魚 <span class="theme-card-arrow">›</span></div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--sand"></div>
+        <div class="theme-card-label">カニ・ヤドカリ <span class="theme-card-arrow">›</span></div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--sand"></div>
+        <div class="theme-card-label">貝がら <span class="theme-card-arrow">›</span></div>
+      </div>
+    </div>
+
+    <div class="talk-bubble">
+      <p>カニとヤドカリ、どっちを見つけたい？</p>
+    </div>
+    <p style="font-size: 0.76rem; color: var(--text-muted); margin-top: var(--sp-sm); line-height: 1.6;">見つけても、さわらずにそっと見てみよう。写真に残すだけでも、旅の発見になります。</p>
+  </div>
+</section>
+
+<!-- ===== 夕日と夜の空 ===== -->
+<section id="sec-sunset" class="theme-section theme-section--white">
+  <div class="container">
+    <div class="theme-heading">
+      <div class="theme-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+      </div>
+      <div>
+        <h2>夕日と夜の空</h2>
+        <div class="theme-rule"></div>
+      </div>
+    </div>
+    <p class="theme-intro">晴れた夕方には、空がオレンジやピンクに染まります。夜の海は昼とは全然違います。</p>
+
+    <div class="theme-card-grid">
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--sunset"></div>
+        <div class="theme-card-label">夕日 <span class="theme-card-arrow">›</span></div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--night"></div>
+        <div class="theme-card-label">夜の波 <span class="theme-card-arrow">›</span></div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--night"></div>
+        <div class="theme-card-label">星と月 <span class="theme-card-arrow">›</span></div>
+      </div>
+    </div>
+
+    <div class="talk-bubble">
+      <p>夕日は何色に見えるかな？</p>
+      <p>夜の海は、どんな音がするかな？</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== まちとお店 ===== -->
+<section id="sec-dmall" class="theme-section theme-section--cream">
+  <div class="container">
+    <div class="theme-heading">
+      <div class="theme-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+          <path d="M9 22V12h6v10"/>
+        </svg>
+      </div>
+      <div>
+        <h2>まちとお店</h2>
+        <div class="theme-rule"></div>
+      </div>
+    </div>
+    <p class="theme-intro">D'Mallやお店で、日本と違うものを見つけよう。看板、色、音、おみやげも旅の発見です。</p>
+
+    <div class="theme-photo-main">
+      <img src="assets/img/dmall.jpg" alt="D'Mall のにぎやかな通り" loading="lazy">
+    </div>
+
+    <div class="theme-card-grid">
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--town"></div>
+        <div class="theme-card-label">おみやげ屋さん <span class="theme-card-arrow">›</span></div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--food"></div>
+        <div class="theme-card-label">7-Eleven <span class="theme-card-arrow">›</span></div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--town"></div>
+        <div class="theme-card-label">英語の看板 <span class="theme-card-arrow">›</span></div>
+      </div>
+    </div>
+
+    <div class="talk-bubble">
+      <p>日本と違うものを3つ見つけられるかな？</p>
+    </div>
+
+    <div class="school-visual-card">
+      <!-- 上部ビジュアルエリア（写真がある場合は img を追加、ない場合はグラデーション＋アイコン） -->
+      <div class="school-card-visual" aria-hidden="true">
+        <div class="school-card-visual-inner">
+          <!-- 地球アイコン：インターナショナルを表す -->
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" opacity="0.52">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20"/>
+            <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+          </svg>
+          <!-- 開いた本アイコン：学校・学びを表す -->
+          <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" opacity="0.62">
+            <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/>
+            <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
+          </svg>
+        </div>
+      </div>
+      <!-- カード本文 -->
+      <div class="school-card-content">
+        <p class="school-visual-title">島の学校をのぞいてみる</p>
+        <p class="school-visual-body">ボラカイ島には、いろいろな国につながる子どもたちが通う学校もあります。日程が合えば、学校を見たり、少し体験できることもあります。</p>
+        <div class="school-point-tags">
+          <span class="school-point-tag">えいごが聞こえるかも</span>
+          <span class="school-point-tag">どんな教室かな？</span>
+          <span class="school-point-tag">どんな子がいるかな？</span>
+        </div>
+        <p class="school-visual-q">日本の学校と、どこがちがうかな？</p>
+        <p class="school-visual-note">学校側の受け入れ状況により、ご案内できない場合があります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== たべもの ===== -->
+<section id="sec-food" class="theme-section theme-section--white">
+  <div class="container">
+    <div class="theme-heading">
+      <div class="theme-icon theme-icon--food">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2M7 2v20"/>
+          <path d="M21 15V2a5 5 0 00-5 5v6c0 1.1.9 2 2 2h3v5"/>
+        </svg>
+      </div>
+      <div>
+        <h2>たべもの</h2>
+        <div class="theme-rule"></div>
+      </div>
+    </div>
+    <p class="theme-intro">ボラカイには、あまくておいしいフルーツや、子どもも食べやすいごはんがあります。無理に挑戦しなくても大丈夫。食べられそうなものを探してみよう。</p>
+
+    <div class="theme-photo-main theme-photo-main--tall">
+      <img src="assets/img/food.jpg" alt="南国の食べもの" loading="lazy" onerror="this.style.display='none'; this.parentElement.style.background='var(--sand)'">
+    </div>
+
+    <div class="theme-card-grid">
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--food"></div>
+        <div class="theme-card-label">マンゴー <span class="theme-card-arrow">›</span></div>
+        <p class="theme-card-desc">南国の甘いフルーツ</p>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--food"></div>
+        <div class="theme-card-label">ジョリビー <span class="theme-card-arrow">›</span></div>
+        <p class="theme-card-desc">チキンやポテトがある人気のお店</p>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--food"></div>
+        <div class="theme-card-label">スーパーで買えるもの <span class="theme-card-arrow">›</span></div>
+        <p class="theme-card-desc">飲みものやお菓子を探せる場所</p>
+      </div>
+    </div>
+
+    <div class="theme-card-grid">
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--food"></div>
+        <div class="theme-card-label">マンゴーシェイク <span class="theme-card-arrow">›</span></div>
+        <p class="theme-card-desc">暑い日に飲みたくなる冷たい飲みもの</p>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--food"></div>
+        <div class="theme-card-label">ハロハロ <span class="theme-card-arrow">›</span></div>
+        <p class="theme-card-desc">フィリピンのかき氷デザート</p>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--food"></div>
+        <div class="theme-card-label">ホテルの朝ごはん <span class="theme-card-arrow">›</span></div>
+        <p class="theme-card-desc">パン・卵・フルーツなどを見つけよう</p>
+      </div>
+    </div>
+
+    <div class="talk-bubble">
+      <p>マンゴーシェイク、飲んでみたい？</p>
+      <p>ジョリビーとマック、どっちが気になる？</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== こまったとき ===== -->
+<section id="sec-trouble" class="theme-section theme-section--cream">
+  <div class="container">
+    <div class="theme-heading">
+      <div class="theme-icon theme-icon--trouble">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/>
+          <circle cx="12" cy="12" r="4"/>
+          <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/>
+          <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/>
+          <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/>
+          <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/>
+        </svg>
+      </div>
+      <div>
+        <h2>こまったとき</h2>
+        <div class="theme-rule"></div>
+      </div>
+    </div>
+    <p class="theme-intro">暑い・つかれた・おなかがすいた時は？</p>
+
+    <div class="trouble-card-grid">
+      <div class="trouble-card">
+        <img src="assets/img/illust-water.png" alt="水のボトル" class="trouble-card-illust">
+        <div class="trouble-card-body">
+          <p class="trouble-card-title">水をのもう</p>
+          <p class="trouble-card-desc">こまめに水をのんで、からだをまもろう。</p>
+        </div>
+      </div>
+      <div class="trouble-card">
+        <img src="assets/img/illust-rest.png" alt="パラソルとチェア" class="trouble-card-illust">
+        <div class="trouble-card-body">
+          <p class="trouble-card-title">すずしい場所で休もう</p>
+          <p class="trouble-card-desc">日かげやクーラーのある場所で、ひと休みしよう。</p>
+        </div>
+      </div>
+      <div class="trouble-card">
+        <img src="assets/img/illust-food.png" alt="ごはんとバナナ" class="trouble-card-illust">
+        <div class="trouble-card-body">
+          <p class="trouble-card-title">食べやすいものをえらぼう</p>
+          <p class="trouble-card-desc">すきなもの、たべやすいものからでだいじょうぶ。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="comfort-footer">
+      こまっても、ひとつずつでだいじょうぶ。
+    </div>
+  </div>
+</section>
+
+<!-- ===== ホテルのくらし ===== -->
+<section id="sec-hotel" class="theme-section theme-section--white">
+  <div class="container">
+    <div class="theme-heading">
+      <div class="theme-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M2 20v-8a2 2 0 012-2h16a2 2 0 012 2v8"/>
+          <path d="M2 20h20M12 12V4M8 8h8"/>
+        </svg>
+      </div>
+      <div>
+        <h2>ホテルのくらし</h2>
+        <div class="theme-rule"></div>
+      </div>
+    </div>
+    <p class="theme-intro">外に出るだけが旅ではありません。ホテルで休む時間も、旅の大事な一部です。</p>
+
+    <div class="theme-card-grid">
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--hotel"></div>
+        <div class="theme-card-label">ホテルのプール <span class="theme-card-arrow">›</span></div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--food"></div>
+        <div class="theme-card-label">朝ごはん <span class="theme-card-arrow">›</span></div>
+      </div>
+      <div class="theme-card">
+        <div class="theme-card-photo theme-card-photo--hotel"></div>
+        <div class="theme-card-label">窓の景色 <span class="theme-card-arrow">›</span></div>
+      </div>
+    </div>
+
+    <div class="talk-bubble">
+      <p>ホテルでのんびりするなら、何があるとうれしい？</p>
+    </div>
+  </div>
+</section>
+
+<!-- ページ下部リンク -->
+<section class="section" style="background: var(--sand-light);">
+  <div class="container text-center">
+    <p style="color: var(--text-light); margin-bottom: var(--sp-md); font-size: 0.88rem;">同行する大人が確認しておきたい情報はこちら</p>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+      <a href="parent-guide.html" class="btn btn-secondary">同行者向け準備ガイドを見る</a>
+      <a href="checklist.html" class="btn btn-outline">チェックリストを見る</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:var(--navy);padding:20px 16px;text-align:center;">
+  <p style="color:rgba(255,255,255,0.6);font-size:0.72rem;margin:0;">ボラカイ島 出発前ガイド &nbsp;|&nbsp; <a href="parent-guide.html" style="color:rgba(255,255,255,0.7);">同行者向け準備ガイド</a> &nbsp;|&nbsp; <a href="checklist.html" style="color:rgba(255,255,255,0.7);">チェックリスト</a></p>
+  <p style="color:rgba(255,255,255,0.4);font-size:0.65rem;margin-top:8px;">情報は変更される場合があります。出発前に最新情報をご確認ください。</p>
+  <p style="color:rgba(255,255,255,0.35);font-size:0.6rem;margin-top:6px;">&copy; 2026 ボラカイ島 出発前ガイド</p>
+</footer>
+
+<!-- ボトムナビ -->
+<nav class="bottom-nav" aria-label="メインナビゲーション">
+  <a href="#discover" class="bottom-nav-item active" aria-current="page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    見つける
+  </a>
+  <a href="parent-guide.html" class="bottom-nav-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    安心準備
+  </a>
+  <a href="checklist.html" class="bottom-nav-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+    チェック
+  </a>
+</nav>
+
+<button class="back-to-top" id="backToTop" aria-label="ページの先頭へ戻る">↑</button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
