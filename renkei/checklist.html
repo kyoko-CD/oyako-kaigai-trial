@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>出発前チェックリスト｜ボラカイ島 出発前ガイド</title>
+  <meta name="description" content="ボラカイ島への出発前チェックリスト。パスポート・eTravel・保険・薬・通信・食事の備えなどをまとめています。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260616">
+</head>
+<body class="has-bottom-nav">
+
+  <!-- アプリヘッダー -->
+  <header class="app-header" id="appHeader">
+    <a href="index.html" class="app-header-logo">
+      <img src="assets/img/logo-boracay.png" alt="親子で旅するボラカイ島 BORACAY" class="header-logo-img">
+    </a>
+    <button class="app-header-menu" id="navToggle" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <nav class="site-nav" id="siteNav">
+    <ul>
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="family-guide.html#discover">見つける</a></li>
+      <li><a href="parent-guide.html">安心準備</a></li>
+      <li><a href="checklist.html">チェック</a></li>
+    </ul>
+  </nav>
+
+  <!-- ページヒーロー -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="breadcrumb">
+        <a href="index.html">ホーム</a><span>›</span>チェック
+      </p>
+      <h1>出発前チェックリスト</h1>
+      <p>出発前に、スマホでひとつずつ確認してみてください。</p>
+    </div>
+  </div>
+
+  <!-- チェックリスト本文 -->
+  <div class="section">
+    <div class="container">
+
+      <!-- 進捗サマリー -->
+      <div class="checklist-summary">
+        <div>
+          <div class="checklist-summary-num"><span id="totalChecked">0</span></div>
+          <div class="checklist-summary-label">/ <span id="totalItems">0</span> 項目が完了</div>
+        </div>
+        <div style="flex:1;">
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <p style="font-size:0.78rem; color: var(--color-text-muted); margin-top:0.4rem; margin-bottom:0;">チェックは自動で保存されます</p>
+        </div>
+      </div>
+
+      <!-- ツールバー -->
+      <div class="checklist-toolbar">
+        <button class="btn btn-sunset btn-sm" id="printChecklist">印刷する</button>
+        <button class="btn btn-outline btn-sm" id="resetChecklist">↺ リセット</button>
+      </div>
+
+      <!-- ===== カテゴリ 1: 渡航書類 ===== -->
+      <div class="checklist-category">
+        <div class="checklist-cat-header">
+          <span class="checklist-cat-icon">📄</span>
+          <h3>1. 渡航書類</h3>
+          <span class="cat-progress">0/7</span>
+        </div>
+        <div class="checklist-items">
+          <div class="checklist-item" id="ci-docs-1">
+            <input type="checkbox" id="chk-docs-1">
+            <label for="chk-docs-1">親子ともパスポートの有効期限を確認した</label>
+          </div>
+          <div class="checklist-item" id="ci-docs-2">
+            <input type="checkbox" id="chk-docs-2">
+            <label for="chk-docs-2">復路または第三国行き航空券を確認した</label>
+          </div>
+          <div class="checklist-item" id="ci-docs-3">
+            <input type="checkbox" id="chk-docs-3">
+            <label for="chk-docs-3">eTravel登録のタイミングを確認した（出発72時間以内）</label>
+          </div>
+          <div class="checklist-item" id="ci-docs-4">
+            <input type="checkbox" id="chk-docs-4">
+            <label for="chk-docs-4">eTravel QRコードの保存・提示方法を決めた</label>
+          </div>
+          <div class="checklist-item" id="ci-docs-5">
+            <input type="checkbox" id="chk-docs-5">
+            <label for="chk-docs-5">ホテル予約確認書（バウチャー）をスマホに保存した</label>
+          </div>
+          <div class="checklist-item" id="ci-docs-6">
+            <input type="checkbox" id="chk-docs-6">
+            <label for="chk-docs-6">ホテルがDOT認定宿かどうかを確認した</label>
+          </div>
+          <div class="checklist-item" id="ci-docs-7">
+            <input type="checkbox" id="chk-docs-7">
+            <label for="chk-docs-7">パスポートのコピーまたは写真をスマホに保存した</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== カテゴリ 2: 航空・移動 ===== -->
+      <div class="checklist-category">
+        <div class="checklist-cat-header">
+          <span class="checklist-cat-icon">✈️</span>
+          <h3>2. 航空・移動</h3>
+          <span class="cat-progress">0/6</span>
+        </div>
+        <div class="checklist-items">
+          <div class="checklist-item" id="ci-travel-1">
+            <input type="checkbox" id="chk-travel-1">
+            <label for="chk-travel-1">利用空港がカティクランかカリボかを確認した</label>
+          </div>
+          <div class="checklist-item" id="ci-travel-2">
+            <input type="checkbox" id="chk-travel-2">
+            <label for="chk-travel-2">到着後の送迎方法（ホテル手配・旅行会社・個別手配）を決めた</label>
+          </div>
+          <div class="checklist-item" id="ci-travel-3">
+            <input type="checkbox" id="chk-travel-3">
+            <label for="chk-travel-3">夜着・早朝発の場合に送迎が対応しているか確認した</label>
+          </div>
+          <div class="checklist-item" id="ci-travel-4">
+            <input type="checkbox" id="chk-travel-4">
+            <label for="chk-travel-4">荷物の数と送迎の対応条件を確認した</label>
+          </div>
+          <div class="checklist-item" id="ci-travel-5">
+            <input type="checkbox" id="chk-travel-5">
+            <label for="chk-travel-5">港での手続き（環境税・ターミナルフィー等）の流れを把握した</label>
+          </div>
+          <div class="checklist-item" id="ci-travel-6">
+            <input type="checkbox" id="chk-travel-6">
+            <label for="chk-travel-6">子どもが乗り物酔いしやすい場合の対策（酔い止め・席の位置等）を準備した</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== カテゴリ 3: お金・通信 ===== -->
+      <div class="checklist-category">
+        <div class="checklist-cat-header">
+          <span class="checklist-cat-icon">💳</span>
+          <h3>3. お金・通信</h3>
+          <span class="cat-progress">0/5</span>
+        </div>
+        <div class="checklist-items">
+          <div class="checklist-item" id="ci-money-1">
+            <input type="checkbox" id="chk-money-1">
+            <label for="chk-money-1">クレジットカード（VISA・Mastercard）を準備した</label>
+          </div>
+          <div class="checklist-item" id="ci-money-2">
+            <input type="checkbox" id="chk-money-2">
+            <label for="chk-money-2">現金（ペソ）を少額紙幣に分けて準備した</label>
+          </div>
+          <div class="checklist-item" id="ci-money-3">
+            <input type="checkbox" id="chk-money-3">
+            <label for="chk-money-3">eSIM・現地SIM・Wi-Fiルーターのいずれかを決めた</label>
+          </div>
+          <div class="checklist-item" id="ci-money-4">
+            <input type="checkbox" id="chk-money-4">
+            <label for="chk-money-4">到着後すぐに使える通信手段を確認した</label>
+          </div>
+          <div class="checklist-item" id="ci-money-5">
+            <input type="checkbox" id="chk-money-5">
+            <label for="chk-money-5">ホテル・D'Mall・港・近隣医療機関をGoogle Mapsにオフライン保存した</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== カテゴリ 4: 体調・薬 ===== -->
+      <div class="checklist-category">
+        <div class="checklist-cat-header">
+          <span class="checklist-cat-icon">💊</span>
+          <h3>4. 体調・薬</h3>
+          <span class="cat-progress">0/8</span>
+        </div>
+        <div class="checklist-items">
+          <div class="checklist-item" id="ci-med-1">
+            <input type="checkbox" id="chk-med-1">
+            <label for="chk-med-1">常備薬を日程分＋余裕をもって準備した</label>
+          </div>
+          <div class="checklist-item" id="ci-med-2">
+            <input type="checkbox" id="chk-med-2">
+            <label for="chk-med-2">酔い止め薬を入れた</label>
+          </div>
+          <div class="checklist-item" id="ci-med-3">
+            <input type="checkbox" id="chk-med-3">
+            <label for="chk-med-3">解熱鎮痛薬（子ども用）を入れた</label>
+          </div>
+          <div class="checklist-item" id="ci-med-4">
+            <input type="checkbox" id="chk-med-4">
+            <label for="chk-med-4">整腸剤を入れた</label>
+          </div>
+          <div class="checklist-item" id="ci-med-5">
+            <input type="checkbox" id="chk-med-5">
+            <label for="chk-med-5">日焼け止め（高SPF）を入れた</label>
+          </div>
+          <div class="checklist-item" id="ci-med-6">
+            <input type="checkbox" id="chk-med-6">
+            <label for="chk-med-6">虫よけスプレーを入れた</label>
+          </div>
+          <div class="checklist-item" id="ci-med-7">
+            <input type="checkbox" id="chk-med-7">
+            <label for="chk-med-7">絆創膏・消毒液など最低限の応急セットを入れた</label>
+          </div>
+          <div class="checklist-item" id="ci-med-8">
+            <input type="checkbox" id="chk-med-8">
+            <label for="chk-med-8">海外旅行保険の連絡先をスマホに保存した</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== カテゴリ 5: 服・海まわり ===== -->
+      <div class="checklist-category">
+        <div class="checklist-cat-header">
+          <span class="checklist-cat-icon">👙</span>
+          <h3>5. 服・海まわり</h3>
+          <span class="cat-progress">0/7</span>
+        </div>
+        <div class="checklist-items">
+          <div class="checklist-item" id="ci-clothes-1">
+            <input type="checkbox" id="chk-clothes-1">
+            <label for="chk-clothes-1">水着を入れた（使う可能性がある場合）</label>
+          </div>
+          <div class="checklist-item" id="ci-clothes-2">
+            <input type="checkbox" id="chk-clothes-2">
+            <label for="chk-clothes-2">ラッシュガードを入れた</label>
+          </div>
+          <div class="checklist-item" id="ci-clothes-3">
+            <input type="checkbox" id="chk-clothes-3">
+            <label for="chk-clothes-3">帽子を入れた</label>
+          </div>
+          <div class="checklist-item" id="ci-clothes-4">
+            <input type="checkbox" id="chk-clothes-4">
+            <label for="chk-clothes-4">サンダルを入れた</label>
+          </div>
+          <div class="checklist-item" id="ci-clothes-5">
+            <input type="checkbox" id="chk-clothes-5">
+            <label for="chk-clothes-5">着替えを多めに入れた（汗・海・雨での濡れを想定）</label>
+          </div>
+          <div class="checklist-item" id="ci-clothes-6">
+            <input type="checkbox" id="chk-clothes-6">
+            <label for="chk-clothes-6">冷房や夜風への羽織りもの（カーディガン等）を入れた</label>
+          </div>
+          <div class="checklist-item" id="ci-clothes-7">
+            <input type="checkbox" id="chk-clothes-7">
+            <label for="chk-clothes-7">濡れたものを入れるビニール袋やジップロックを準備した</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== カテゴリ 6: 食事の備え ===== -->
+      <div class="checklist-category">
+        <div class="checklist-cat-header">
+          <span class="checklist-cat-icon">🍱</span>
+          <h3>6. 食事の備え</h3>
+          <span class="cat-progress">0/5</span>
+        </div>
+        <div class="checklist-items">
+          <div class="checklist-item" id="ci-food-1">
+            <input type="checkbox" id="chk-food-1">
+            <label for="chk-food-1">子どもが食べ慣れた軽食・お菓子を日本から持参した</label>
+          </div>
+          <div class="checklist-item" id="ci-food-2">
+            <input type="checkbox" id="chk-food-2">
+            <label for="chk-food-2">ホテルの朝食で子どもが食べられそうなものを事前に確認した</label>
+          </div>
+          <div class="checklist-item" id="ci-food-3">
+            <input type="checkbox" id="chk-food-3">
+            <label for="chk-food-3">現地で食事・軽食を買い足せる店の場所を把握した（D'Mall周辺など）</label>
+          </div>
+          <div class="checklist-item" id="ci-food-4">
+            <input type="checkbox" id="chk-food-4">
+            <label for="chk-food-4">水分補給用の飲みもの（経口補水系）を確保する方法を決めた</label>
+          </div>
+          <div class="checklist-item" id="ci-food-5">
+            <input type="checkbox" id="chk-food-5">
+            <label for="chk-food-5">空腹時にすぐ食べられるもの（レトルトおかゆ・常温ゼリー等）を準備した</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== カテゴリ 7: 安全・連絡 ===== -->
+      <div class="checklist-category">
+        <div class="checklist-cat-header">
+          <span class="checklist-cat-icon">🆘</span>
+          <h3>7. 安全・緊急連絡</h3>
+          <span class="cat-progress">0/6</span>
+        </div>
+        <div class="checklist-items">
+          <div class="checklist-item" id="ci-safety-1">
+            <input type="checkbox" id="chk-safety-1">
+            <label for="chk-safety-1">在フィリピン日本国大使館の連絡先をスマホに保存した</label>
+          </div>
+          <div class="checklist-item" id="ci-safety-2">
+            <input type="checkbox" id="chk-safety-2">
+            <label for="chk-safety-2">フィリピン緊急番号（911・143）をスマホに保存した</label>
+          </div>
+          <div class="checklist-item" id="ci-safety-3">
+            <input type="checkbox" id="chk-safety-3">
+            <label for="chk-safety-3">ホテルの住所と電話番号を保存した（チェックイン後に確認）</label>
+          </div>
+          <div class="checklist-item" id="ci-safety-4">
+            <input type="checkbox" id="chk-safety-4">
+            <label for="chk-safety-4">近くの病院・クリニックの候補をGoogle Mapsに保存した</label>
+          </div>
+          <div class="checklist-item" id="ci-safety-5">
+            <input type="checkbox" id="chk-safety-5">
+            <label for="chk-safety-5">保険会社の緊急連絡先（24時間対応）をスマホに保存した</label>
+          </div>
+          <div class="checklist-item" id="ci-safety-6">
+            <input type="checkbox" id="chk-safety-6">
+            <label for="chk-safety-6">子どもとはぐれた時の待ち合わせ場所と伝え方を親子で確認した</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== カテゴリ 8: 親子で話しておくこと ===== -->
+      <div class="checklist-category">
+        <div class="checklist-cat-header">
+          <span class="checklist-cat-icon">💬</span>
+          <h3>8. 親子で事前に話しておくこと</h3>
+          <span class="cat-progress">0/6</span>
+        </div>
+        <div class="checklist-items">
+          <div class="checklist-item" id="ci-talk-1">
+            <input type="checkbox" id="chk-talk-1">
+            <label for="chk-talk-1">飛行機のあとに車や船にも乗ることを伝えた</label>
+          </div>
+          <div class="checklist-item" id="ci-talk-2">
+            <input type="checkbox" id="chk-talk-2">
+            <label for="chk-talk-2">しんどい時は休んでいいことを伝えた</label>
+          </div>
+          <div class="checklist-item" id="ci-talk-3">
+            <input type="checkbox" id="chk-talk-3">
+            <label for="chk-talk-3">食べられない時は無理しなくていいことを伝えた</label>
+          </div>
+          <div class="checklist-item" id="ci-talk-4">
+            <input type="checkbox" id="chk-talk-4">
+            <label for="chk-talk-4">海に入らなくても楽しめることを伝えた</label>
+          </div>
+          <div class="checklist-item" id="ci-talk-5">
+            <input type="checkbox" id="chk-talk-5">
+            <label for="chk-talk-5">ホテルでのんびり過ごす日があってもいいことを伝えた</label>
+          </div>
+          <div class="checklist-item" id="ci-talk-6">
+            <input type="checkbox" id="chk-talk-6">
+            <label for="chk-talk-6">旅行中に見つけたいものを一緒に3つ決めた</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- ツールバー（下） -->
+      <div class="checklist-toolbar" style="margin-top: var(--space-lg);">
+        <button class="btn btn-sunset btn-sm" id="printChecklist2" onclick="window.print()">印刷する</button>
+        <button class="btn btn-outline btn-sm" id="resetChecklist2" onclick="document.getElementById('resetChecklist').click()">↺ リセット</button>
+      </div>
+
+      <!-- 関連ページへのリンク -->
+      <div class="info-box mt-lg">
+        <strong>詳細情報はこちらへ：</strong><br>
+        <a href="parent-guide.html">同行者向け準備ガイド</a>では、移動・食事・医療・通信などの詳細情報をまとめています。<br>
+        <a href="family-guide.html">親子で見るガイド</a>では、島の様子を親子で事前に楽しめます。
+      </div>
+
+    </div>
+  </div>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-logo">ボラカイ島 出発前ガイド</p>
+          <p>小学生親子のための事前ガイド</p>
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="family-guide.html#discover">見つける</a></li>
+            <li><a href="parent-guide.html">安心準備</a></li>
+            <li><a href="checklist.html">チェック</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-notice">
+        <strong>ご注意：</strong>このガイドの情報は、作成時点で確認した情報をもとにしています。料金、営業時間、運航状況、入国関連、医療機関の受付時間、ホテルの認定状況などは変更される可能性があります。出発前には、必ず公式情報・ホテル・航空会社・保険会社などで最新情報をご確認ください。
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2026 ボラカイ島 出発前ガイド</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ボトムナビ -->
+  <nav class="bottom-nav" aria-label="メインナビゲーション">
+    <a href="family-guide.html#discover" class="bottom-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      見つける
+    </a>
+    <a href="parent-guide.html" class="bottom-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      安心準備
+    </a>
+    <a href="checklist.html" class="bottom-nav-item active" aria-current="page">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+      チェック
+    </a>
+  </nav>
+
+  <button class="back-to-top" id="backToTop" aria-label="ページの先頭へ戻る">↑</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
